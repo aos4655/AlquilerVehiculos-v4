@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="519.0" style="-fx-background-color: #d0f3fd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaCliente">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="128.0" prefWidth="525.0">
+         <children>
+            <MenuBar minWidth="-Infinity" prefHeight="25.0" prefWidth="127.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Fichero">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#confirmarSalida" text="Salir" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Datos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#mostrarEstadisticas" text="Estadisticas" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Ayuda">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#acercaDe" text="Acerca de" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox alignment="CENTER" prefHeight="287.0" prefWidth="519.0" spacing="40.0" style="-fx-background-color: #F0F8FA;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#listar" prefHeight="25.0" prefWidth="108.0" text="Listar" />
+                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="108.0" text="Insertar" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="265.0" prefWidth="113.0" spacing="35.0">
+                     <children>
+                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="108.0" text="Modificar" />
+                        <ImageView fx:id="ivClientes" fitHeight="75.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#devolverAlquiler" prefHeight="25.0" prefWidth="112.0" text="Devolver Alquiler" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#borrar" prefHeight="25.0" prefWidth="108.0" text="Borrar" />
+                        <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#buscar" prefHeight="25.0" prefWidth="108.0" text="Buscar" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
